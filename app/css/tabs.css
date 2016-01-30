@@ -1,0 +1,38 @@
+.tabs {
+  width: 600px;
+  height: 240px;
+  margin-bottom: 15px; }
+  .tabs__controls {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .tabs__controls-item {
+      display: inline-block;
+      margin-left: 10px;
+      background: #2c3e50;
+      transition: all .2s; }
+      .tabs__controls-item:hover, .tabs__controls-item.active {
+        background: #2ecc71; }
+      .tabs__controls-item:first-child {
+        margin-left: 0; }
+  .tabs__controls-link {
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px 7px; }
+  .tabs__list {
+    margin-top: 10px;
+    border: 1px solid #ddd; }
+  .tabs__item {
+    display: none;
+    list-style: none outside none;
+    padding: 10px;
+    background: 50% 100% no-repeat #f5f5f5; }
+    .tabs__item.active {
+      display: block; }
+    .tabs__item:last-of-type {
+      background-image: none; }

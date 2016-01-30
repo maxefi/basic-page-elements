@@ -1,0 +1,50 @@
+.slideshow {
+  width: 600px;
+  margin-bottom: 15px;
+
+  &__display {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px dashed #ddd;
+    // position: relative;
+    display: flex;
+
+    img {
+      margin: auto;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 3px;
+    border: 1px dashed #ddd;
+
+    &:hover {
+      border: 1px solid #ddd;
+    }
+
+    &:active {
+      border: 1px solid tomato;
+    }
+  }
+
+  &__pic {
+    display: flex;
+    width: 100px;
+    height: 80px;
+
+    img {
+      margin: auto;
+      max-width: 100px;
+      max-height: 80px;
+    }
+  }
+}

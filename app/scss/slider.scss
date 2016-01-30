@@ -1,0 +1,35 @@
+.slider {
+  height: 190px;
+  margin-left: 25px;
+
+  &__list {
+    transition: all .3s;
+    list-style: none;
+    width: 1000px;
+    position: relative;
+    left: 0;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    &-wrap {
+      width: 250px;
+      height: 150px;
+      overflow: hidden;
+    }
+  }
+
+  &__item {
+    float: left;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+    margin-top: 10px;
+  }
+}

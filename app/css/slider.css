@@ -1,0 +1,30 @@
+.slider {
+  height: 190px;
+  margin-left: 25px; }
+  .slider__list {
+    transition: all .3s;
+    list-style: none;
+    width: 1000px;
+    position: relative;
+    left: 0; }
+    .slider__list:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .slider__list-wrap {
+      width: 250px;
+      height: 150px;
+      overflow: hidden; }
+  .slider__item {
+    float: left; }
+  .slider__controls {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-flow: row-reverse wrap;
+    -ms-flex-flow: row-reverse wrap;
+    flex-flow: row-reverse wrap;
+    margin-top: 10px; }
