@@ -1,10 +1,11 @@
 .wrapper {
   position: relative;
-  margin-top: 10px;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   overflow: hidden;
+  $svg-gradient-shim-threshold: 1 !global;
+  background-image: linear-gradient(120deg, #D585FF, #00FFEE);
   // min-width: 980px;
 }
 
@@ -14,9 +15,20 @@
 }
 
 .container {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 15px;
+  $svg-gradient-shim-threshold: 1 !global;
+  background-image: linear-gradient(-45deg, rgba(252,165,241, .9), rgba(181,255,255, .3));
   display: flex;
   justify-content: space-between;
   flex-flow: row-reverse wrap;
+
+  &__slider {
+    width: 65%;
+    margin-bottom: 45px;
+    display: flex;
+  }
 }
 
 @media all and (max-width: 960px) {
@@ -36,6 +48,7 @@
   .accordeon {
     order: 1;
     align-self: flex-start;
+    position: initial !important;
   }
 
   .tabs {
@@ -45,11 +58,20 @@
   }
 
   .slideshow {
-    order: 4;
+    order: 5;
   }
 
   .slider {
     order: 3;
+    margin-bottom: 15px;
+    // margin: auto !important;
+  }
+
+  .container__slider {
+    order: 4;
+    width: auto;
+    display: block;
+    height: 190px;
     margin: auto !important;
   }
 }

@@ -1,6 +1,6 @@
 .slider {
   height: 190px;
-  margin-left: 25px; }
+  margin: auto; }
   .slider__list {
     transition: all .3s;
     list-style: none;
